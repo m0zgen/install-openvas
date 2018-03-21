@@ -2,9 +2,9 @@
 2) Update your CentOS installation and reboot if necessary
 yum -y update
 3) Add Atomicorp repo (see https://wiki.atomicorp.com/wiki/index.php/Atomic)
+wget -q -O - https://www.atomicorp.com/installers/atomic | sh
 4) Install the follow packages
 yum install -y wget bzip2 texlive net-tools alien gnutls-utils
-wget -q -O - https://www.atomicorp.com/installers/atomic | sh
 5) Install OpenVAS 9
 yum install openvas -y
 6) edit /etc/redis.conf. Add/uncomment the following
